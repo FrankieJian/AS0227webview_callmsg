@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function javacalljs(){
+     document.getElementById("content").innerHTML ="<br\>JAVA调用了JS的无参函数";
+}
+
+function javacalljswith(arg){
+     document.getElementById("content").innerHTML =
+         ("<br\>"+arg);
+}
+
+function callNum(){
+    num = document.getElementById("num").value;
+}
+
+function msgText(){
+    msgContent = document.getElementById.value;
+}
+</script>
+
+</head>
+
+<body>
+<h1><div id="content">内容显示</div></h1>
+<br/>
+<input type="button"  value="点击调用java代码" width="15px" height="20px" onclick="window.demo.showToast()" />
+<br/>
+<input type="button"  value="点击调用java代码并传递参数" onclick="window.demo.add(3, 5)" /><br/>
+<label for="num">请输入你的电话号码</label><br/>
+<input type="number"  maxlength="11" id="num" onblur="callNum()" required autofocus /><br/>
+<label for="msg">请输入你要发送的信息</label><br/>
+<textarea rows="10" cols="60" id="msg" onblur="msgText()"></textarea><br/>
+<input type="button" value="打电话" onclick="window.android.call(num)"><br/>
+<input type="button" value="发信息" onclick="window.android.sendMsg(num, msgContent)"><br/>
+</body>
+
+</html>
