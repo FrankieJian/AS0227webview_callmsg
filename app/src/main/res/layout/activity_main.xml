@@ -12,22 +12,34 @@
     android:orientation="vertical"
     tools:context="com.example.g572_528r.as0227_call.MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="调用JS无参"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="调用JS带参"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="webView"/>
+        android:text="Android"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用javascript"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用javascript"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:text="WebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
 
     <WebView
         android:layout_width="match_parent"

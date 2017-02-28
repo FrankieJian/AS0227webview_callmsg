@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mWebView.loadUrl("javascript:javacalljswith(" + "'http://blog.csdn.net/Leejizhou'" + ")");
+                mWebView.loadUrl("javascript:javacalljswith(" + "'Hello LFJ'" + ")");
             }
         });
     }
